@@ -2,10 +2,48 @@
 *,
 *:after,
 *:before {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-body{
-    
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
 }
+
+/* || VARIABLES */
+:root {
+  /* COLORS */
+  --COLOR-TITLE: #55b1b1;
+  --COLOR-DESC-1: #68bcbd;
+  --COLOR-DESC-2: #e1e4e9;
+  --SIZE-PADDING-BOXES: 2.5em;
+}
+
 /* || BLOCKS */
+.mainCtn__bottomCtn {
+  display: flex;
+}
+.mainCtn__bottomCtn__monthlySubCtn {
+  display: flex;
+  flex-direction: column;
+  padding: var(--SIZE-PADDING-BOXES);
+  background: #55b1b1;
+}
+.mainCtn__bottomCtn__monthlySubCtn__signUpBtn {
+  width: 100%;
+  border: none;
+  padding: 0.9em 1.5em;
+  border-radius: 4px;
+}
+.mainCtn__bottomCtn__monthlySubCtn__signUpBtn.--color {
+  background-color: #c5e04a;
+  color: var(--COLOR-DESC-2);
+}
+.mainCtn__bottomCtn__monthlySubCtn__signUpBtn.--text {
+  font-size: 1em;
+}
+.mainCtn__bottomCtn__whyUsCtn {
+  padding: var(--SIZE-PADDING-BOXES);
+  background: #68bcbd;
+}/*# sourceMappingURL=sign-up.css.map */

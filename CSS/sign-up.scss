@@ -1,0 +1,61 @@
+/* || NORMALIZE */
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+}
+
+/* || VARIABLES */
+
+:root {
+  /* COLORS */
+  // --LEFT-COLUMN-BGCOLOR:#55b1b1;
+  // --RIGHT-COLUMN-BGCOLOR:#68bcbd;
+
+  --COLOR-TITLE: #55b1b1;
+  --COLOR-DESC-1: #68bcbd;
+  --COLOR-DESC-2: #e1e4e9;
+
+  // || SIZE
+
+  --SIZE-PADDING-BOXES: 2.5em;
+}
+
+/* || BLOCKS */
+
+.mainCtn__bottomCtn {
+  display: flex;
+
+  &__monthlySubCtn {
+    display: flex;
+    flex-direction: column;
+    padding: var(--SIZE-PADDING-BOXES);
+    background: #55b1b1;
+
+    &__signUpBtn {
+      width: 100%;
+      border: none;
+      padding: .9em 1.5em;
+      border-radius: 4px;
+
+      &.--color {
+        background-color: #c5e04a;
+        color: var(--COLOR-DESC-2);
+      }
+
+      &.--text {
+        font-size: 1em;
+      }
+    }
+  }
+
+  &__whyUsCtn {
+    padding: var(--SIZE-PADDING-BOXES);
+    background: #68bcbd;
+  }
+}
