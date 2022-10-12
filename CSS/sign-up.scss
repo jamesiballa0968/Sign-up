@@ -5,6 +5,7 @@
   box-sizing: border-box;
 }
 body {
+  background: #f8f8f8;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
   margin: 0;
@@ -15,28 +16,64 @@ body {
 
 :root {
   /* COLORS */
-  // --LEFT-COLUMN-BGCOLOR:#55b1b1;
-  // --RIGHT-COLUMN-BGCOLOR:#68bcbd;
-
   --COLOR-TITLE: #55b1b1;
   --COLOR-DESC-1: #85e1e2;
   --COLOR-DESC-2: #e1e4e9;
 
   // || SIZE
 
-  --SIZE-PADDING-BOXES: 2.5em;
+  --SIZE-PADDING-BOXES-BOTTOM: 2em;
+  --SIZE-PADDING-BOXES-UPPER: 39px;
 }
 
 /* || BLOCKS */
+.sign-up-title{
+  font-size: 2.5em;
+  text-align: center;
+}
+.mainCtn{
+  margin: 50px auto;
+  align-items: center;
+  justify-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.mainCtn__upperCtn {
+  order: 1;
+  padding: var(--SIZE-PADDING-BOXES-UPPER);
+  background: aliceblue;
+
+  &__title-1 {
+    &.--color {
+      color: #55b1b1;
+    }
+  }
+
+  &__desc-1 {
+    &.--color {
+      color: #bdda3c;
+    }
+    &.--text {
+      font-weight: 700;
+    }
+  }
+
+  &__desc-2{
+    &.--color{
+      color: #cecece;
+    }
+  }
+}
 
 .mainCtn__bottomCtn {
+  order:2;
   display: flex;
 
   &__monthlySubCtn {
     background: #55b1b1;
     display: flex;
     flex-direction: column;
-    padding: var(--SIZE-PADDING-BOXES);
+    padding: var(--SIZE-PADDING-BOXES-BOTTOM);
 
     &.--color {
       color: var(--COLOR-DESC-2);
@@ -65,7 +102,7 @@ body {
 
     &__signUpBtn {
       box-shadow: 0px 3px 12px #808080;
-      
+
       border-radius: 4px;
       border: none;
       cursor: pointer;
@@ -87,18 +124,25 @@ body {
 
   &__whyUsCtn {
     background: #68bcbd;
-    padding: var(--SIZE-PADDING-BOXES);
+    padding: var(--SIZE-PADDING-BOXES-BOTTOM);
     &.--color {
       color: var(--COLOR-DESC-2);
     }
 
     &__title-1 {
+      margin: 15px 0;
       &.--text {
+        font-size: 1.2em;
         font-weight: 700;
       }
     }
   }
   &__whyUsCtn > p[class*="desc"] {
     margin: 5px 0px;
+
+    &.--color{
+      color: #9bedee;
+    }
+    
   }
 }
