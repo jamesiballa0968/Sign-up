@@ -27,11 +27,11 @@ body {
 }
 
 /* || BLOCKS */
-.sign-up-title{
+.sign-up-title {
   font-size: 2.5em;
   text-align: center;
 }
-.mainCtn{
+.mainCtn {
   margin: 50px auto;
   align-items: center;
   justify-items: center;
@@ -58,15 +58,15 @@ body {
     }
   }
 
-  &__desc-2{
-    &.--color{
+  &__desc-2 {
+    &.--color {
       color: #cecece;
     }
   }
 }
 
 .mainCtn__bottomCtn {
-  order:2;
+  order: 2;
   display: flex;
 
   &__monthlySubCtn {
@@ -101,8 +101,7 @@ body {
     }
 
     &__signUpBtn {
-      box-shadow: 0px 3px 12px #808080;
-
+      box-shadow: 0px 3px 12px #9bbe8a;
       border-radius: 4px;
       border: none;
       cursor: pointer;
@@ -118,6 +117,13 @@ body {
       &.--text {
         font-size: 1em;
         font-weight: 600;
+      }
+      &.--hover:hover {
+        -moz-transition: all 0.2s ease-in;
+        -o-transition: all 0.2s ease-in;
+        -webkit-transition: all 0.2s ease-in;
+        
+        background-color: #da963c;
       }
     }
   }
@@ -140,9 +146,8 @@ body {
   &__whyUsCtn > p[class*="desc"] {
     margin: 5px 0px;
 
-    &.--color{
+    &.--color {
       color: #9bedee;
     }
-    
   }
 }
